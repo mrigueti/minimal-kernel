@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=C:\Users\maykel\Documents\workspace\minimal-kernel\Cargo.toml
+cargo:rustc-link-search=native=C:\Users\maykel\Documents\workspace\minimal-kernel\target\bootimage\bootloader\x86_64-bootloader\release\build\bootloader-462ada1953cc6225\out
+cargo:rustc-link-lib=static=kernel_bin-minimal-kernel
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=C:\Users\maykel\Documents\workspace\minimal-kernel\target\x86_64-minimal_os\debug\minimal-kernel
+cargo:rerun-if-changed=build.rs
