@@ -19,7 +19,7 @@ pub extern "C" fn _start() -> ! {
 
 fn print_message() {
     let vga_buffer = 0xb8000 as *mut u8;
-    let message = b"Hello, New kernel!";
+    let message = b"Hello, New Kernel!";
 
     for (i, &byte) in message.iter().enumerate() {
         unsafe {
